@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int arr[] = { -1,-2,-3,-4,-5,-6,-7,-8,-9,-11 };
+	int max = 0;
+	max = (arr[0]>arr[1]?arr[0]:arr[1]);
+	for (int i = 2; i < 10; i++)
+	{
+		if (arr[i] > max)
+		{
+			max = arr[i];
+		}
+	} 
+	printf("%d\n", max);
+	return 0;
+}
